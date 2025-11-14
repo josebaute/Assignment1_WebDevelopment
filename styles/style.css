@@ -9,7 +9,12 @@ header {
     background-color: #cc6d00;
     color: white;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
+}
+
+.left_text {
+
+    text-align: left;
 }
 
 nav ul {
@@ -55,9 +60,16 @@ section {
     gap: 20px;                /* espacio entre la imagen y el texto */
 }
 
+
 .contenedor img {
-    width: 500px;             /* tamaño de la imagen */
+                 /* tamaño de la imagen */
     height: auto;
+}
+
+.contenedor_2 {
+    display: flex;            /* activa flexbox */
+    align-items: normal;      /* centra verticalmente la imagen y el texto */
+    gap: 300px;                /* espacio entre la imagen y el texto */
 }
 
 table {
@@ -82,9 +94,10 @@ tr:nth-child(even) {
     background-color: #fafafa;
 }
 
-ol {
-    padding-left: 40px;
-    font-weight: 500;
+ul {
+
+    display: inline-block;
+    text-align: left;
 }
 
 p {
@@ -97,3 +110,16 @@ footer {
     background-color: #222;
     color: white;
 }
+
+/* ANIMACIONES */
+
+.fade-in {
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
