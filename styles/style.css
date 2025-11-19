@@ -5,11 +5,16 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #cc6d00;
+.headerJose {
+    background-color: #000000;
     color: white;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+h2 {
+    font-family: 'Inter Tight', sans-serif;
 }
 
 .left_text {
@@ -49,27 +54,49 @@ section {
 
 }
 
-.logo {
 
-    text-align: left;
-}
 
 .contenedor {
     display: flex;            /* activa flexbox */
     align-items: normal;      /* centra verticalmente la imagen y el texto */
-    gap: 20px;                /* espacio entre la imagen y el texto */
+    gap: 20px;
+    /* espacio entre la imagen y el texto */
 }
 
 
 .contenedor img {
-                 /* tamaño de la imagen */
+    flex-wrap: wrap;         /* tamaño de la imagen */
     height: auto;
 }
 
 .contenedor_2 {
     display: flex;            /* activa flexbox */
-    align-items: normal;      /* centra verticalmente la imagen y el texto */
-    gap: 300px;                /* espacio entre la imagen y el texto */
+    align-items: center;
+    justify-content: center;/* centra verticalmente la imagen y el texto */
+    flex-wrap: wrap;
+    gap: 200px/* centra verticalmente la imagen y el texto */
+                   /* espacio entre la imagen y el texto */
+}
+
+.contenedor_2 img:hover {
+    transform: scale(1.05);
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.contenedor_header {
+    display: flex;            /* activa flexbox */
+    align-items: center;
+    justify-content: center;/* centra verticalmente la imagen y el texto */
+    flex-wrap: wrap;/* espacio entre la imagen y el texto */
+}
+
+.contenedor_header img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    flex-wrap: wrap;
+
 }
 
 table {
@@ -78,6 +105,7 @@ table {
     border-collapse: collapse;
     text-align: left;
     font-family: Arial, sans-serif;
+    flex-wrap: wrap;
 }
 
 th, td {
@@ -107,7 +135,7 @@ p {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #222;
+    background-color: #000000;
     color: white;
 }
 
@@ -121,5 +149,3 @@ footer {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-
