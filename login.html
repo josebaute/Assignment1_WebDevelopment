@@ -22,27 +22,62 @@
         <main>
             <div class="login-display">
                 <div class="login-image"><img src="/images/login.webp" /></div>
-                <form class="login-form">
-                    <label for="username"
-                        >Username:
+                <div name= "form" class="login-form">
+                    <label
+                        >Username:<br>
                         <input
-                            type="email"
-                            name="email"
+                            type="username"
+                            name="username"
+                            id="username"
                             autocomplete="username"
                             required /></label
                     ><br />
-                    <label for="password"
-                        >Password:
+                    <label
+                        >Password:<br>
                         <input
                             type="password"
+                            id="password"
                             name="password"
                             autocomplete="current-password"
                             required
                         /> </label
-                    ><br /><br />
-                    <button type="submit">Login</button>
-                    <script></script>
-                </form>
+
+                    ><br />
+                    <p id="demo"></p>
+                    <br />
+                    <button onclick="myFunction()">Login</button>
+                    <script>
+                        function isValid(str){
+                            if (str.length < 8) return false;
+
+                            let upperCount = 0;
+                            let digitCount = 0;
+                            let specialCount = 0;
+
+                            for (const ch of str){
+                                if(/[A-Z]/.test(ch)) upperCount++;
+                                else if (/[0-9]/.test(ch)) digitCount++;
+                                else if (/[^A-Za-z0-9]/.test(ch)) specialCount++;
+                            }
+
+                            return upperCount === 2 && digitCount === 1 && specialCount === 1;
+
+                        }
+                        function myFunction() {
+                            // Get the value of the input field with id="numb"
+                            let x = document.getElementById("password").value;
+                            // If x is Not a Number or less than one or greater than 10
+                            let text;
+                            if (isValid(x)) {
+                                window.location.href = "index.html";
+                                text = "";
+                            } else {
+                                text = "Password not valid";
+                            }
+                            document.getElementById("demo").innerHTML = text;
+                        }
+                    </script>
+                </div>
             </div>
         </main>
         <footer>&copy; 2025 Nuestro Grupo</footer>

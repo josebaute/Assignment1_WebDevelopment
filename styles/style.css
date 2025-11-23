@@ -131,6 +131,13 @@ tr:nth-child(even) {
     transform: scale(1.05);
 }
 
+/*Login*/
+
+.conatiner_log {
+    display: flex;
+}
+
+
 /* FOOTER */
 footer {
     color: white;
