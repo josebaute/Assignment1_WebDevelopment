@@ -50,7 +50,6 @@ header {
 
 /* MAIN */
 main {
-    flex: 1;
     animation: fadeIn 1.2s ease forwards;
     color: black;
     background-color: white;
@@ -74,10 +73,6 @@ main {
 
 .contenedor-main div {
     width: 100%;
-}
-
-.image-container {
-    border: 1px solid black;
 }
 
 .image img {
@@ -143,6 +138,40 @@ footer {
     text-align: center;
     align-items: center;
     padding: 2rem;
+}
+
+/* LOGIN PAGE */
+.login-display {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .login-display {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.login-image {
+    width: 70%;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form {
 }
 
 /* ANIMACIONES */
