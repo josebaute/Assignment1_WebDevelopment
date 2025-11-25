@@ -1,14 +1,18 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Presentación de nuestro grupo</title>
+        <title>Presentation of the group</title>
         <link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
         <header>
-            <div></div>
+            <div class="header-item header-icon-left">
+                <a href="index.html" class="iconHeader">
+                    <img src="images/home.svg" alt="home" />
+                </a>
+            </div>
             <div class="header-item">
                 <h1>We Are Pablo & Jose</h1>
                 <div>
@@ -21,30 +25,34 @@
         </header>
         <main>
             <div>
-                <section id="quienes-somos">
-                    <h2>Quiénes somos</h2>
+                <section id="quienes-somos" class="index-info">
+                    <h2>Who are we?</h2>
                     <p>
                         Somos un grupo de estudiantes de ingeniería apasionados
                         por la tecnología...
                     </p>
                 </section>
 
-                <section id="proyecto">
-                    <h2>Nuestro proyecto</h2>
-                    <p>Estamos desarrollando una aplicación que...</p>
-                </section>
-
-                <section id="contacto">
-                    <h2>Contacto</h2>
+                <section id="contacto" class="index-info">
+                    <h2>Contact</h2>
                     <p>
                         Puedes escribirnos a
-                        <a href="mailto:grupo@universidad.es"
-                            >grupo@universidad.es</a
+                        <a href="jb226dv@student.lnu.se"
+                            >jb336dv@student.lnu.se</a
                         >
                     </p>
                 </section>
+
+                <section id="proyecto" class="index-info">
+                    <h2>The Project</h2>
+                    <p>Estamos desarrollando una aplicación que...</p>
+                    <a class="my-links" href="https://github.com/josebaute/Assignment1_WebDevelopment">
+                        <img src="images/github.png" alt="Project Github" />
+                    </a>
+                </section>
+
             </div>
         </main>
-        <footer>&copy; 2025 Nuestro Grupo</footer>
+        <footer>&copy; 2025 Our Group</footer>
     </body>
 </html>
