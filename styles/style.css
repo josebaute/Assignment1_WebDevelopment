@@ -244,6 +244,11 @@ input[type=username], [type=password] {
 
 }
 
+.index-Thanks img:hover{
+    transform: scale(1.05);
+
+}
+
 
 
 /* ANIMACIONES */
