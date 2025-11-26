@@ -22,9 +22,9 @@
         <main>
             <div class="login-display">
                 <div class="login-image"><img src="/images/login.webp" /></div>
-                <div name= "form" class="login-form">
+                <div name="form" class="login-form">
                     <label
-                        >Username:<br>
+                        >Username:<br />
                         <input
                             type="username"
                             name="username"
@@ -33,7 +33,7 @@
                             required /></label
                     ><br />
                     <label
-                        >Password:<br>
+                        >Password:<br />
                         <input
                             type="password"
                             id="password"
@@ -41,27 +41,30 @@
                             autocomplete="current-password"
                             required
                         /> </label
-
                     ><br />
                     <p id="demo" class="invalidPassword"></p>
                     <br />
                     <button onclick="myFunction()" type="button">Login</button>
                     <script>
-                        function isValid(str){
+                        function isValid(str) {
                             if (str.length < 8) return false;
 
                             let upperCount = 0;
                             let digitCount = 0;
                             let specialCount = 0;
 
-                            for (const ch of str){
-                                if(/[A-Z]/.test(ch)) upperCount++;
+                            for (const ch of str) {
+                                if (/[A-Z]/.test(ch)) upperCount++;
                                 else if (/[0-9]/.test(ch)) digitCount++;
-                                else if (/[^A-Za-z0-9]/.test(ch)) specialCount++;
+                                else if (/[^A-Za-z0-9]/.test(ch))
+                                    specialCount++;
                             }
 
-                            return upperCount === 2 && digitCount === 1 && specialCount === 1;
-
+                            return (
+                                upperCount === 2 &&
+                                digitCount === 1 &&
+                                specialCount === 1
+                            );
                         }
                         function myFunction() {
                             // Get the value of the input field with id="numb"
@@ -80,6 +83,6 @@
                 </div>
             </div>
         </main>
-        <footer>&copy; 2025 Nuestro Grupo</footer>
+        <footer>&copy; 2025 Pablo & Jose</footer>
     </body>
 </html>
